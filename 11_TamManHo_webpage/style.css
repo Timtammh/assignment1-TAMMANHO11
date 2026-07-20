@@ -43,6 +43,14 @@ a:link {
     line-height: 1.1;
 }
 
+.sub {
+    font-size: 13px;
+    text-align: center;
+    line-height: .5;
+    margin-bottom: 20px;
+    color: darkgray;
+}
+
 -------------------------------------
 
 .card {
@@ -52,7 +60,7 @@ a:link {
   
 /** Dark-blue background **/
 .egypt:before {
-    background-image: url(img/egypt.png);
+    background-image: url(img/egy1.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +79,7 @@ a:link {
 }
 
 .paris:before {
-    background-image: url(img/paris.png);
+    background-image: url(img/pa.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,7 +98,7 @@ a:link {
 }
 
 .high:before {
-    background-image: url(img/sh.png);
+    background-image: url(img/sco.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +117,7 @@ a:link {
 }
 
 .osaka:before {
-    background-image: url(img/os.png);
+    background-image: url(img/osa.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,4 +181,55 @@ a:link {
 
 .card-deck {
     margin-top: 10px;
+}
+
+----------------------------------
+
+/* 1. 外層容器必須要有 position: relative */
+.hero-section {
+    width: 100%;
+    height: 100vh;
+    position: relative; /* 呢句絕對不能少！ */
+    background-color: #ffffff;
+}
+  
+.scroll-indicator {
+    position: absolute;
+    
+    /* 關鍵調整：將底部的距離設為 0，或者留極少像素（例如 10px 或 15px） */
+    bottom: 8px; 
+    
+    /* 維持水平置中的黃金組合 */
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+  
+/* 3. 軌道直線 */
+.scroll-line {
+    width: 1px;
+    height: 40px;
+    background-color: #eaeaea;
+    position: relative;
+    overflow: hidden;
+}
+  
+/* 4. 會郁嘅內線 */
+.scroll-line-inner {
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    position: absolute;
+    top: -100%;
+    animation: scrollDown 2s infinite cubic-bezier(0.77, 0, 0.175, 1);
+}
+  
+@keyframes scrollDown {
+    0% { top: -100%; }
+    50% { top: 0; }
+    100% { top: 100%; }
 }
