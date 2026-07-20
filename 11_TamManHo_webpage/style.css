@@ -1,6 +1,7 @@
 body {
     margin: 5px;
-    background-image: url(img/);
+    background-image: url(img/bg5.png);
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     font-family: Montserrat;
@@ -14,8 +15,7 @@ body {
     align-items: center;
     font-size: 15px;
     margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 70px;
+    background-color: rgba(255, 255, 255, 0.2);
     padding: 18px ;
     text-decoration: none;
 }
@@ -38,6 +38,10 @@ a:link {
     text-decoration: none ; 
 }
 
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
 .slogan {
     font-size: 60px;
     text-align: center;
@@ -51,7 +55,7 @@ a:link {
     text-align: center;
     line-height: .5;
     margin-bottom: 60px;
-    color: darkgray;
+    color: rgb(92, 92, 92);
 }
 
 -------------------------------------
@@ -186,56 +190,6 @@ a:link {
     margin-top: 10px;
 }
 
-----------------------------------
-
-/* 1. 外層容器必須要有 position: relative */
-.hero-section {
-    width: 100%;
-    height: 100vh;
-    position: relative; /* 呢句絕對不能少！ */
-    background-color: #ffffff;
-}
-  
-.scroll-indicator {
-    position: absolute;
-    
-    /* 關鍵調整：將底部的距離設為 0，或者留極少像素（例如 10px 或 15px） */
-    bottom: 8px; 
-    
-    /* 維持水平置中的黃金組合 */
-    left: 50%;
-    transform: translateX(-50%);
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 10;
-}
-  
-/* 3. 軌道直線 */
-.scroll-line {
-    width: 1px;
-    height: 40px;
-    background-color: #eaeaea;
-    position: relative;
-    overflow: hidden;
-}
-  
-/* 4. 會郁嘅內線 */
-.scroll-line-inner {
-    width: 100%;
-    height: 100%;
-    background-color: #222;
-    position: absolute;
-    top: -100%;
-    animation: scrollDown 2s infinite cubic-bezier(0.77, 0, 0.175, 1);
-}
-  
-@keyframes scrollDown {
-    0% { top: -100%; }
-    50% { top: 0; }
-    100% { top: 100%; }
-}
 
 ----------------------------------------------------
 
@@ -252,6 +206,7 @@ a:link {
     align-items: center;
     text-align: center;
     margin-top: 80px;
+    gap: 35px;
 }
 
 .icon-tit {
@@ -264,31 +219,3 @@ a:link {
     margin-top: -10px;
 }
 
----------------------------------------
-
-/* 設定全站頁面切換動畫的時間與特效 */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.4s; /* 動畫持續 0.4 秒 */
-  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-/* 舊頁面淡出 */
-::view-transition-old(root) {
-  animation-name: fadeOut;
-}
-
-/* 新頁面淡入 */
-::view-transition-new(root) {
-  animation-name: fadeIn;
-}
-
-@keyframes fadeOut {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
