@@ -1,21 +1,16 @@
 fieldset {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(212, 255, 94);
     border: 1px solid #767676 !important; /* 線條顏色（可依喜好調整） */
     padding: 20px 20px !important;   /* 內聚，讓裡面的表單不會太擠 */
     border-radius: 10px !important;        /* 微幅的圓角 */
-    width: 600px !important;
+    width: 400px !important;
+    height: 500px;
     text-align: center !important;
     overflow: hidden; 
+    padding: 60px;
 }
 
-/* 確保標題（Personalia:）直接壓在線條上 */
-legend {
-    display: flex;
-    justify-items: center ;
-    text-align: center;
-    padding: 0 15px;           /* 左右留白，才不會讓線條死死貼著文字 */
-    font-size: 20px;
-}
+
 
 .form-personal {
     display: flex;
@@ -53,4 +48,13 @@ legend {
 
 .formcon {
     display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243);
+    padding: 30px;
+}
+
+.f-img {
+    background-color: white;
+    width: 295px;
+    padding: 10px;
 }
