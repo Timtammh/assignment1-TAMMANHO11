@@ -1,0 +1,46 @@
+fieldset {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #767676 !important; /* 線條顏色（可依喜好調整） */
+    padding: 20px 20px !important;   /* 內聚，讓裡面的表單不會太擠 */
+    border-radius: 10px !important;        /* 微幅的圓角 */
+    width: 600px !important;
+    text-align: center !important;
+    overflow: hidden; 
+}
+
+/* 確保標題（Personalia:）直接壓在線條上 */
+legend {
+    display: flex;
+    justify-items: center ;
+    text-align: center;
+    padding: 0 15px;           /* 左右留白，才不會讓線條死死貼著文字 */
+    font-size: 20px;
+}
+
+.form-personal {
+    display: flex;
+    flex-direction: column;
+    justify-items: left;
+    align-items: center;
+    text-align: center;
+}
+
+#SayST {
+    display: flex;
+    flex-direction: column;
+}
+
+.goomap {
+    background-color: azure;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.topic10 {
+    display: flex;
+    justify-content: center;
+    
+}
