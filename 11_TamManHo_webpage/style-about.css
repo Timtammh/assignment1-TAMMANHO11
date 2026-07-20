@@ -44,3 +44,13 @@ legend {
     justify-content: center;
     
 }
+
+.con-logo {
+    position: absolute;
+    top: 15px;    /* 距離圖片頂部 15px */
+    right: 15px;  /* 距離圖片右側 15px */
+}
+
+.formcon {
+    display: flex;
+}
