@@ -44,7 +44,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap" rel="stylesheet">
 
+
+
+
+
         <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/lucide@latest"></script>
     </head>
     <body>
 
@@ -109,15 +114,35 @@
             <!-- end cards container -->
         </div>
 
-        <div class="scroll-indicator">
-            <!-- 可選：如果唔想寫 Scroll 字眼，可以刪除下面呢行 span -->
-            
+        <!-- <div class="scroll-indicator">            
             <div class="scroll-line">
               <div class="scroll-line-inner"></div>
             </div>
+        </div> -->
+
+
+        <div class="icongro">
+            <div class="iconpatt">
+                <i data-lucide="landmark"></i> 
+                <p class="icon-tit">Historical Wonders</p>
+                <p class="icon-p">Journey through ancient dynasties andtimeless monuments.</p>
+            </div>
+            <div class="iconpatt">
+                <i data-lucide="shopping-bag"></i>
+                <p class="icon-tit">Haute & Shopping</p>
+                <p class="icon-p">Experience iconic fashion capitals and curatedstreet styles.</p>
+            </div>
+            <div class="iconpatt">
+                <i data-lucide="mountain"></i>
+                <p class="icon-tit">Nature & Trails</p>
+                <p class="icon-p">Escape into breathtaking landscapes and ruggedwilderness.</p>
+            </div>
+            <div class="iconpatt">
+                <i data-lucide="smile"></i>
+                <p class="icon-tit">Family Getaway</p>
+                <p class="icon-p">Create joyful memories with vibrant entertainmentfor all ages.</p>
+            </div>
         </div>
-
-
 
 
 
@@ -125,6 +150,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+        <script>lucide.createIcons();</script>
     </body>
 </html>
 

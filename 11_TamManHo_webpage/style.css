@@ -4,6 +4,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     font-family: Montserrat;
+    width: 100%;
+    height: auto;
 }
 
 .nav-con {
@@ -233,3 +235,31 @@ a:link {
     50% { top: 0; }
     100% { top: 100%; }
 }
+
+----------------------------------------------------
+
+.iconpatt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.icongro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.icon-tit {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.icon-p {
+    font-size: 12px;
+    margin-top: -10px;
+}
+
