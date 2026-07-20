@@ -35,10 +35,18 @@ a:link {
     text-decoration: none ; 
 }
 
+.slogan {
+    font-size: 60px;
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-family: Cal Sans;
+    line-height: 1.1;
+}
+
 -------------------------------------
 
 .card {
-    border-radius: 9px !important;
+    border-radius: 50px !important;
     overflow: hidden;
 }
   
@@ -161,4 +169,8 @@ a:link {
 .card-body {
     width: 250px;
     height: 300px;
+}
+
+.card-deck {
+    margin-top: 10px;
 }
