@@ -1,0 +1,52 @@
+.about-gp {
+    background-color: rgb(243, 243, 243, 0.7);
+    width: 800px;
+    margin: 0 auto;
+    padding: 60px;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+.about-s2 {
+    background-color: rgb(243, 243, 243, 0.7);
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+hr {
+    width: 600px;
+    border: .6px solid rgb(43, 43, 43);
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.tab-ab {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+table, tr, td {
+    border: 1px solid darkgray;
+    padding: 20px;
+}
