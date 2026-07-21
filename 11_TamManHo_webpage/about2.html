@@ -49,6 +49,8 @@
 
         
         <meta name="view-transition" content="same-origin">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="main.css">
         <script src="https://unpkg.com/lucide@latest"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
@@ -68,37 +70,49 @@
             <a style="color: rgb(255, 255, 255);" href="contact.html">Contact</a>
         </div>
 
-        <div>
-            <h1>Travel is not a destination. It is an intent.</h1>
-            <p>Most travel guides tell you where to go. Essence is designed for why you go. We believe every journey begins with a specific state of mind—whether it is the quiet pull of ancient history, the vibrant pulse of a fashion capital, the raw embrace of wilderness, or the joy of shared family moments.</p>
-        </div>
+        <div class="contact">
+            <h1  data-aos="fade-down" 
+            data-aos-delay="100" 
+            data-aos-once="true"
+            data-aos-duration="1100"
+            data-aos-easing="ease-in-out">Contact Us</h1>
+        </div>    
+    
+        <div data-aos="fade-down" 
+        data-aos-delay="100" 
+        data-aos-once="true"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
+        class="formcon">
+            <div class="formgroupb">
+                <div>
+                    <span class="con-logo">Essence</span>
+                    <img class="f-img" src="img/sh.png" alt="">
+                </div>
 
-        <div>
-            <h2>One world, filtered through four unique lenses.</h2>
-            <h3>We strip away the noise of conventional tourism and curate four distinct paths:</h3>
-            <table>
-                <tr>
-                    <td>History</td>
-                    <td>The timeless echoes of ancient civilizations.</td>
-                </tr>
-                <tr>
-                    <td>Fashion</td>
-                    <td>The cutting-edge rhythm of style and culture.</td>
-                </tr>
-                <tr>
-                    <td>History</td>
-                    <td>The breathtaking escape into the wild.</td>
-                </tr>
-                <tr>
-                    <td>History</td>
-                    <td>The warmth of unforgettable shared experiences.</td>
-                </tr>
-            </table>
-         </div>
-
-         <h4>Find your essence.</h4>
-         <p>Choose your intent, immerse in the atmosphere, and experience the world on your own terms.</p>
-
+                
+                <form>
+                    <div class="form-container">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-email">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email address">
+                        </div>
+                        <div class="opinion">
+                            <label for="excites">Tell us what excites you</label><br>
+                            <select>
+                                    <option value="at">Adventure Travel</option>
+                                    <option value="bt">Budget Tips</option>
+                                    <option value="le">Luxury Escapes</option>
 
 
         <footer class="container" style="font-size: 13px;">

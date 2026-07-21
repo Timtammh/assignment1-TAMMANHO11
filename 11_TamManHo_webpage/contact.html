@@ -49,8 +49,6 @@
 
         
         <meta name="view-transition" content="same-origin">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="main.css">
         <script src="https://unpkg.com/lucide@latest"></script>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
@@ -78,10 +76,14 @@
             data-aos-easing="ease-in-out">Contact Us</h1>
         </div>    
     
-        <div class="formcon">
+        <div data-aos="fade-down" 
+        data-aos-delay="100" 
+        data-aos-once="true"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
+        class="formcon">
             <div class="formgroupb">
                 <div>
-                    <span class="con-logo">Essence</span>
                     <img class="f-img" src="img/sh.png" alt="">
                 </div>
 
@@ -119,7 +121,7 @@
                         </div>    
                         <br>
                         <div class="butt">
-                          <input class="submit" type="button" value="Submit">
+                          <input style="font-family: Montserrat;"  class="submit" type="button" value="Submit">
                         </div>
                     </div>
                 </form>
