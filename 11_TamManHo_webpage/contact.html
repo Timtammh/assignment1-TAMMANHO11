@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="main.css">
-        <link rel="stylesheet" href="style-about.css">
+        <link rel="stylesheet" href="style-contact.css">
         <title>About</title>
 
         <!-- google font -->
@@ -61,7 +61,7 @@
                <a class="nav-color" style="color: black;" href="">EN /</a>
                <a style="color: black;" href="">CN</a>
             </div>
-            <a style="color: black;" href="about.html">About us</a>
+            <a style="color: black;" href="contact.html">About us</a>
             <a style="color: black;"  href="index.html" class="logo">Essence</a>
             <a style="color: black;" href="">Photo</a>
             <a style="color: black;" href="">Contact</a>
@@ -72,53 +72,48 @@
 
     
         <div class="formcon">
-            <div>
-                <span class="con-logo">Essence</span>
-                <img class="f-img" src="img/sh.png" alt="">
-            </div>
-
+            <div class="formgroupb">
+                <div>
+                    <span class="con-logo">Essence</span>
+                    <img class="f-img" src="img/sh.png" alt="">
+                </div>
                 
-            <form action="/action_page.php">
-                <fieldset>
-                    <h3 style="margin-top: -15px;">Contact us</h3>
-                    <label for="fname">First name</label><br>
-                    <input type="text" id="fname" name="fname" placeholder=" e.g.Chan"><br>
-                        
-                    <br>
-        
-                    <label for="lname">Last name</label><br>
-                    <input type="text" id="lname" name="lname" placeholder=" e.g.Lau"><br>
-                        
-                    <br>
-        
-                    <label for="lname">Phone no.</label><br>
-                    <input type="tel" id="phone" name="phone" placeholder="64855061"><br>
-                        
-                    <br>
-        
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email"placeholder="chanlau@gmail.com"><br>
-                        
-                    <br>
-        
-                    <label for="birthday">Birthday</label><br>
-                    <input type="date" id="birthday" name="birthday"><br><br>
-                    <label for="gender">Gender: </label>
-                    <input type="radio" id="female" name="gender" value="female">female
-                    <input type="radio" id="male" name="gender" value="male">male
-                    <input type="radio" id="other" name="gender" value="other">other
-                    <input type="radio" id="secret" name="gender"value="secret">secret<br>
-                        
-                    <br>
-        
-                    <label for="pw">Password</label><br>
-                    <input type="password" id="pw" name="pw"><br>
-                    
-                    <br>
-        
-                    <input type="submit" value="Submit">
-                </fieldset>
-            </form>
+                <form>
+                    <div class="form-container">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label>First Name</label>
+                                <input type="text" placeholder="First Name">
+                            </div>
+                        </div>
+                        <div class="form-email">
+                            <label>Email</label>
+                            <input type="email" placeholder="Email address">
+                        </div>
+                        <div class="opinion">
+                            <label for="excites">Tell us what excites you</label><br>
+                            <select>
+                                    <option value="at">Adventure Travel</option>
+                                    <option value="bt">Budget Tips</option>
+                                    <option value="le">Luxury Escapes</option>
+                                    <option value="hg">Hidden Gems</option>
+                                    <option value="ft">Family Trips</option>
+                                    <option value="st">Solo Travel</option>
+                            </select>
+                        </div>
+                        <div class="checkbox checkbox-group">
+                            <input type="checkbox" id="marketing" name="marketing">
+                            <label>I agree to receive marketing emails</label>
+                        </div>    
+                        <br>
+                        <input class="submit" type="button" value="Submit">
+                    </div>
+                </form>
+            </div>  
         </div>
 
 

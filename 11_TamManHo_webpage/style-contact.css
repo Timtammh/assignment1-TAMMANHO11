@@ -1,0 +1,138 @@
+
+.formcon {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 243, 243, 0.9);
+    padding: 60px;
+    margin-top: 80px;
+}
+
+.formgroupb {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: white;
+}
+
+
+
+.con-logo {
+    position: absolute;
+    top: 15px;    /* 距離圖片頂部 15px */
+    right: 15px;  /* 距離圖片右側 15px */
+}
+
+
+.f-img {
+    background-color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.form-container {
+    background-color: #d2f865;
+    padding: 24px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-group, .form-email {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+    color: #bfc3c9;
+}
+
+.form-email {
+    margin: 20px 0;
+}
+
+.form-email label {
+    font-size: 14px;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+
+.form-email input {
+    width: 100%;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.opinion {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+select {
+    width: 50%;
+    background-color: #ffffff;
+    color: #1f2937;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 80px;
+    background-color: #688519;
+    border: none;
+    border: .5px solid black;
+    padding: 6px;
+    color: #ffffff;
+    font-family: Google Sans;
+    font-size: 15px;
+    margin-top: 8px;
+    margin: 0 auto;
+}
+
+.checkbox {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
