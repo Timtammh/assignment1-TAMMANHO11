@@ -14,14 +14,11 @@ body {
     align-items: center;
     font-size: 15px;
     margin-top: 30px;
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgba(255, 255, 255, 0.6); */
     padding: 18px ;
     text-decoration: none;
 }
 
-.nav-color {
-    color: black !important;
-}
 
 .logo {
     font-size: 50px;
@@ -44,22 +41,6 @@ footer {
   align-items: end;
 }
 
-/* 設定全站頁面切換動畫的時間與特效 */
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.4s; /* 動畫持續 0.4 秒 */
-  animation-timing-function: cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-/* 舊頁面淡出 */
-::view-transition-old(root) {
-  animation-name: fadeOut;
-}
-
-/* 新頁面淡入 */
-::view-transition-new(root) {
-  animation-name: fadeIn;
-}
 
 @keyframes fadeOut {
   from { opacity: 1; }
