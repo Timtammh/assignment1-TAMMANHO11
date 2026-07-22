@@ -50,7 +50,6 @@ a:link {
 .topic {
   color: white;
   font-family: Oregano;
-  text-shadow: 1px 1px 20px #2e2b01;
 }
 
 .place {
@@ -59,6 +58,45 @@ a:link {
   margin-top: -120px;
   font-family: Oregano;
   margin-left: 200px;
+}
+
+.video-card {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-width: 600px;
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-3 {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 300px;
+  margin-left: 20px;
+}
+
+.video-card-3 video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-2 {
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 350px;
+  margin-left: 20px;
+}
+
+.video-card-2 video {
+  width: 100%;
+  display: block;
 }
 
 span {
@@ -73,11 +111,12 @@ span {
 }
 
 .history {
-  width: 700px;
+  width: 950px;
   background-color: rgba(148, 108, 6, 0.295);
   padding: 20px;
   color: white;
   margin-bottom: 60px;
+  display: flex;
 }
 
 .bonus {
@@ -86,6 +125,7 @@ span {
   padding: 20px;
   color: white;
   margin-bottom: 60px;
+  display: flex;
 }
 
 .culture-ou {
@@ -116,7 +156,7 @@ span {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: rgba(66, 48, 3, 0.295);
+  background-color: rgba(66, 48, 3, 0.8);
   padding: 20px;
 }
 

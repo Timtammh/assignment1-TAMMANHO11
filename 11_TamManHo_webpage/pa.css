@@ -1,10 +1,9 @@
 body {
     display: block;
     min-height: 1100px;
-    margin: 5px;
     background-image: url(img/pa-bg.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     font-family: Montserrat;
     width: 100%;
@@ -35,17 +34,192 @@ a:link {
     text-decoration: none ; 
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  max-width: 100% !important;
-  height: auto;
-  padding: 24px 0;
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero-video-section {
+  position: relative;      /* 呢個係關鍵：畀個 video 有嘢可以「絕對定位」返嚟 */
+  width: 100%;
+  height: 100vh;             /* 撐滿成個 viewport 高度 */
+  overflow: hidden;          /* 影片有機會爆出嚟，裁走 */
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  object-fit: cover;         /* 令片填滿個 container，唔會變形、唔會露白邊 */
+  z-index: -1;               /* 谷去最底層，唔會擋住文字 */
+}
+
+.hero-content {
+  position: relative;        /* 令佢喺 video 之上（正常文件流疊層次序） */
+  z-index: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  z-index: 10;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 6vw;
+  color: #fff;
+}
+
+.txt-france {
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.3;  
+}
+
+.txt-paris {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(60px, 12vw, 160px);
+  line-height: 0.9;
+  font-weight: 600;
+  opacity: 0.3;  
+
+}
+
+.contect {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.topic {
+  color: white;
+  font-family: Oregano;
+}
+
+.place {
+  font-size: 60px;
+  color: white;
+  margin-top: 120px;
+  font-family: Limelight;
+  margin-left: 200px;
+}
+
+.video-card {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-width: 600px;
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-3 {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 300px;
+  margin-left: 20px;
+}
+
+.video-card-3 video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-2 {
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 350px;
+  margin-left: 20px;
+}
+
+.video-card-2 video {
+  width: 100%;
+  display: block;
+}
+
+span {
+  font-size: 50px;
+  vertical-align: baseline;
+}
+
+.con-top {
+  font-size: 60px;
+  margin-bottom: -5px;
+  font-weight: 600;
+}
+
+.history {
+  width: 950px;
+  background-color: rgba(0, 2, 18, 0.28);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.bonus {
+  width: 700px;
+  background-color: rgba(0, 2, 18, 0.28);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.culture-ou {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.culture {
+  width: 650px;
+  padding: 20px;
+  color: white;
+  background-color: rgba(0, 2, 18, 0.28);
+}
+
+.attractions {
+  width: 100%;
+  background-color: rgba(0, 2, 18, 0.28);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group-att {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(0, 2, 18, 0.28);
+  padding: 20px;
+}
+
+.con-top-att {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.group-att3 {
+  display: flex;
+  gap: 10px;
+}
+
+
+.con-top-IGA {
+  font-size: 28px;
+  margin-bottom: -1px;
 }
 
 
@@ -60,11 +234,5 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .sub {
-    color: white;
-    line-height: 1.4;
-  }
-  .slogan {
-    color: white;
-  }
+
 }
