@@ -35,17 +35,64 @@ a:link {
     text-decoration: none ; 
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  max-width: 100% !important;
-  height: auto;
-  padding: 24px 0;
+.foot {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  z-index: 10;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.topic {
+  color: white;
+  font-family: Oregano;
+}
+
+.place {
+  font-size: 190px;
+  color: white;
+  margin-top: -80px;
+  font-family: Oregano;
+}
+
+span {
+  font-size: 50px;
+  vertical-align: baseline;
+}
+
+.con-top {
+  font-size: 60px;
+  margin-bottom: -5px;
+  font-weight: 600;
+}
+
+.history {
+  width: 700px;
+  margin-left: 40px;
+  background-color: rgba(78, 58, 6, 0.342);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.culture-ou {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.culture {
+  width: 600px;
+  margin-left: 40px;
+  background-color: rgba(78, 58, 6, 0.342);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.con-top-IGA {
+  font-size: 28px;
+  margin-bottom: -1px;
 }
 
 
@@ -60,11 +107,5 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  .sub {
-    color: white;
-    line-height: 1.4;
-  }
-  .slogan {
-    color: white;
-  }
+
 }
