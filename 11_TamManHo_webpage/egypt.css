@@ -90,6 +90,38 @@ span {
   margin-bottom: 60px;
 }
 
+.attractions {
+  width: 100%;
+  margin-left: 40px;
+  background-color: rgba(78, 58, 6, 0.342);
+  padding: 20px;
+  color: white;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group-att {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(78, 58, 6, 0.397);
+  padding: 20px;
+}
+
+.con-top-att {
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.group-att3 {
+  display: flex;
+  gap: 10px;
+}
+
+
 .con-top-IGA {
   font-size: 28px;
   margin-bottom: -1px;
