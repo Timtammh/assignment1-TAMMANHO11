@@ -242,6 +242,29 @@ span {
   to { opacity: 1; }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 728px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contect {
+    width: 600px;
+  }
+
+  .topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .place {
+    font-size: 220px;
+  }
 
 }
+

@@ -44,7 +44,7 @@ a:hover {
     text-align: center;
     margin: 60px 0 20px 0;
     font-family: Cal Sans;
-    
+    text-align: center;
 }
 
 .sub {
@@ -223,4 +223,34 @@ a:hover {
     justify-content: center;
     align-items: center;
     margin: 80px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1440px) {
+    .slogan {
+      line-height: 0.9;
+    }
+}
+
+@media only screen and (max-width: 929px) {
+    .sub {
+      line-height: 1.2;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .top-div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 575px) {
+    .slogan {
+        font-size: 70px;
+      }
 }
