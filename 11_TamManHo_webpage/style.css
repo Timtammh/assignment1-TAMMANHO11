@@ -216,3 +216,11 @@ a:hover {
     margin-top: -10px;
 }
 
+.quote-strip {
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+}
