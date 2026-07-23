@@ -60,6 +60,22 @@
 
     <body>
 
+        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-1.jpeg);"></div>
+        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-2.jpeg);"></div>
+        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-3.jpeg);"></div>
+        <div class="bg-slide active" style="background-image: url(img/eg-bg.jpeg);"></div>
+
+        <div class="dot-nav">
+            <button class="dot active" data-index="0"></button>
+            <button class="dot" data-index="1"></button>
+            <button class="dot" data-index="2"></button>
+            <button class="dot" data-index="3"></button>
+        </div>
+
+
+
+
+
         <div class="nav-con">
             <div class="wor">
                <a class="nav-color" style="color: rgb(255, 255, 255);" href="">EN /</a>
@@ -181,13 +197,26 @@
         </div>
 
 
+
         <div class="foot">
             <footer>
                 <h6 style="font-size: 13px; display: flex; justify-content: center; align-items: center; text-align: center;">© 2026 TimothyTam · No.11 · Assignment 1</h6>
             </footer>
         </div>
 
-
+        <script>
+            const dots = document.querySelectorAll('.dot');
+            const slides = document.querySelectorAll('.bg-slide');
+            dots.forEach(dot => {
+            dot.addEventListener('click', () => {
+            const i = dot.dataset.index;
+            dots.forEach(d => d.classList.remove('active'));
+            slides.forEach(s => s.classList.remove('active'));
+            dot.classList.add('active');
+            slides[i].classList.add('active');
+            });
+            });
+        </script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>

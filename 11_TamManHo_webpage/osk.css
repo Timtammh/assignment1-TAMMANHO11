@@ -1,0 +1,251 @@
+body {
+  display: block;
+  min-height: 1100px;
+  /* background-image: url(img/hl-bg.jpeg); */
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  font-family: Montserrat;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.bg-slide {
+position: fixed;
+inset: 0;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+opacity: 0;
+transition: opacity 1s ease;
+z-index: -1;
+}
+
+.bg-slide.active {
+opacity: 1;
+}
+
+.dot-nav {
+position: fixed;
+left: 40px;
+top: 50%;
+transform: translateY(-50%);
+display: flex;
+flex-direction: column;
+gap: 20px;
+z-index: 10;
+}
+
+.dot {
+width: 5px;
+height: 5px;
+border-radius: 50%;
+border: 1.5px solid #fff;
+background: transparent;
+cursor: pointer;
+padding: 0;
+transition: all .35s ease;
+}
+
+.dot.active {
+background: #fff;
+transform: scale(1.3);
+}
+
+
+
+/* body {
+    display: block;
+    min-height: 1100px;
+    background-image: url(img/osa.png);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    font-family: Montserrat;
+    width: 100%;
+    height: auto;
+} */
+
+.nav-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 30px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    padding: 18px ;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 50px;
+    font-family: Cookie;
+}
+
+.wor {
+    font-size: 10px;
+}
+
+a:link {
+    text-decoration: none ; 
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contect {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.topic {
+  color: white;
+  font-family: Oregano;
+}
+
+.place {
+  font-size: 350px;
+  color: white;
+  text-shadow: 2px 2px 8px #494949;
+  margin-top: 30px;
+  font-family: Oregano;
+  display: flex;
+  justify-content: center;
+
+}
+
+.video-card {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-width: 600px;
+}
+
+.video-card video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-3 {
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 300px;
+  margin-left: 20px;
+}
+
+.video-card-3 video {
+  width: 100%;
+  display: block;
+}
+
+.video-card-2 {
+  max-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;        /* 一定要，唔係圓角會冇效果 */
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  max-height: 350px;
+  margin-left: 20px;
+}
+
+.video-card-2 video {
+  width: 100%;
+  display: block;
+}
+
+span {
+  font-size: 50px;
+  vertical-align: baseline;
+}
+
+.con-top {
+  font-size: 60px;
+  margin-bottom: -5px;
+  font-weight: 600;
+}
+
+.history {
+  width: 950px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.bonus {
+  width: 700px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 60px;
+  display: flex;
+}
+
+.culture-ou {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.culture {
+  width: 650px;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.attractions {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.group-att {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.con-top-att {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.group-att3 {
+  display: flex;
+  gap: 10px;
+}
+
+
+.con-top-IGA {
+  font-size: 28px;
+  margin-bottom: -1px;
+}
+
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
