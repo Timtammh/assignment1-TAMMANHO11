@@ -1,212 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Description" content="Enter your description here"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <title>Essence</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Essence</title>
 
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" 
-        rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
 
+    <meta name="view-transition" content="same-origin" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="nav-con">
+      <div class="wor">
+        <a class="nav-color" style="color: rgb(255, 255, 255)" href="">EN /</a>
+        <a style="color: rgb(255, 255, 255)" href="">CN</a>
+      </div>
+      <a style="color: rgb(255, 255, 255)" href="about.html">About us</a>
+      <a style="color: rgb(255, 255, 255)" href="index.html" class="logo"
+        >Essence</a
+      >
+      <a style="color: rgb(255, 255, 255)" href="pic.html">Photo</a>
+      <a style="color: rgb(255, 255, 255)" href="contact.html">Contact</a>
+    </div>
 
+    <div class="top-div">
+      <p
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-once="true"
+        data-aos-duration="1300"
+        class="slogan"
+      >
+        Different intents. Endless discoveries.
+      </p>
+      <p
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-once="true"
+        data-aos-duration="1500"
+        class="sub"
+      >
+        Curated journeys tailored to your true travel intent. Explore history,
+        fashion, nature, or family adventures.
+      </p>
+    </div>
 
-        <meta name="view-transition" content="same-origin">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="main.css">
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
-    <body>
-
-        <div class="nav-con">
-            <div class="wor">
-               <a class="nav-color" style="color: rgb(255, 255, 255);" href="">EN /</a>
-               <a style="color: rgb(255, 255, 255);" href="">CN</a>
+    <div class="col-md-10 mx-auto">
+      <div style="display: flex; justify-content: center" class="row my-3">
+        <!-- cards container -->
+        <div class="card-deck">
+          <!-- card -->
+          <div
+            style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)"
+            class="card m-3"
+          >
+            <div class="egypt card-body">
+              <h5 style="font-family: Chelsea Market" class="card-title">
+                <a
+                  href="egypt.html"
+                  class="stretched-link text-decoration-none text-reset"
+                ></a
+                >Egypt<br />Giza & Cairo
+              </h5>
+              <p>History <br />& Culture</p>
+              <p style="font-family: Noto Sans Egyptian Hieroglyphs">𓃻𓃾𓆓𓏲𓂝𓇯</p>
             </div>
-            <a style="color: rgb(255, 255, 255);" href="about.html">About us</a>
-            <a style="color: rgb(255, 255, 255);"  href="index.html" class="logo">Essence</a>
-            <a style="color: rgb(255, 255, 255);" href="pic.html">Photo</a>
-            <a style="color: rgb(255, 255, 255);" href="contact.html">Contact</a>
-        </div>
+          </div>
+          <!-- end card -->
 
-        <div class="top-div">
-          <p data-aos="fade-down" 
-          data-aos-delay="100" 
-          data-aos-once="true"
-          data-aos-duration="1300"
-          class="slogan">Different intents. Endless discoveries.</p>
-          <p data-aos="fade-down" 
-          data-aos-delay="200" 
-          data-aos-once="true"
-          data-aos-duration="1500"
-          class="sub">Curated journeys tailored to your true travel intent. Explore history, fashion, nature, or family adventures.</p>
-        </div>
-        
-        <div class="col-md-10 mx-auto">
-            <div style="display: flex; justify-content: center;" class="row my-3">
-        
-              <!-- cards container -->
-              <div class="card-deck">
-        
-                <!-- card -->
-                <div style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)" class="card m-3">
-                  <div class="egypt card-body">
-                    <h5 style="font-family: Chelsea Market;" class="card-title"><a href="egypt.html" class="stretched-link text-decoration-none text-reset"></a>Egypt<br>Giza & Cairo</h5>
-                    <p>History <br>& Culture</p>
-                    <p style="font-family: Noto Sans Egyptian Hieroglyphs;"> 𓃻𓃾𓆓𓏲𓂝𓇯 </p>
-                  </div>
-                </div>
-                <!-- end card -->
-        
-                <!-- card -->
-                <div style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)" class="card m-3">
-                    <div class="paris card-body">
-                        <h5 style="font-family: Limelight;" class="card-title"><a href="paris.html" class="stretched-link text-decoration-none text-reset"></a>France<br>Paris</h5>
-                        <p>Shopping <br>& Fashion</p>
-                    </div>
-                </div>
-                <!-- end card -->
-        
-                <!-- card -->
-                <div style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)" class="card m-3">
-                  <div class="high card-body">
-                    <h5 style="font-family: Almendra;" class="card-title"><a href="Sland.html" class="stretched-link text-decoration-none text-reset"></a>Scottish <br>Highlands</h5>
-                    <p>Hiking <br>& Nature</p>
-                  </div>
-                </div>
-                <!-- end card -->
-        
-                <!-- card -->
-                <div style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)" class="card m-3">
-                  <div class="osaka card-body">
-                    <h5 style="font-family: Racing Sans One;" class="card-title"><a href="osk.html" class="stretched-link text-decoration-none text-reset"></a>Japan<br>Osaka</h5>
-                    <p>Family</p>
-                  </div>
-                </div>
-              <!-- end card -->
-        
+          <!-- card -->
+          <div
+            style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)"
+            class="card m-3"
+          >
+            <div class="paris card-body">
+              <h5 style="font-family: Limelight" class="card-title">
+                <a
+                  href="paris.html"
+                  class="stretched-link text-decoration-none text-reset"
+                ></a
+                >France<br />Paris
+              </h5>
+              <p>Shopping <br />& Fashion</p>
             </div>
-            <!-- end cards container -->
-        </div>
+          </div>
+          <!-- end card -->
 
-
-
-        <div class="icongro">
-            <div   data-aos="fade-up" 
-                    data-aos-duration="900"    
-                    data-aos-delay="100"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"       
-                    class="iconpatt">
-                <i class="icon" data-lucide="landmark"></i> 
-                <p class="icon-tit">Historical Wonders</p>
-                <p class="icon-p">Journey through ancient dynasties andtimeless monuments.</p>
+          <!-- card -->
+          <div
+            style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)"
+            class="card m-3"
+          >
+            <div class="high card-body">
+              <h5 style="font-family: Almendra" class="card-title">
+                <a
+                  href="Sland.html"
+                  class="stretched-link text-decoration-none text-reset"
+                ></a
+                >Scottish <br />Highlands
+              </h5>
+              <p>Hiking <br />& Nature</p>
             </div>
-            <div data-aos="fade-up"   
-                    data-aos-duration="900"    
-                    data-aos-delay="250"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600" 
-                    class="iconpatt">
-                <i data-lucide="shopping-bag"></i>
-                <p class="icon-tit">Haute & Shopping</p>
-                <p class="icon-p">Experience iconic fashion capitals and curatedstreet styles.</p>
+          </div>
+          <!-- end card -->
+
+          <!-- card -->
+          <div
+            style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.3)"
+            class="card m-3"
+          >
+            <div class="osaka card-body">
+              <h5 style="font-family: Racing Sans One" class="card-title">
+                <a
+                  href="osk.html"
+                  class="stretched-link text-decoration-none text-reset"
+                ></a
+                >Japan<br />Osaka
+              </h5>
+              <p>Family</p>
             </div>
-            <div data-aos="fade-up"   
-                    data-aos-duration="900"    
-                    data-aos-delay="400"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600" 
-            class="iconpatt">
-                <i data-lucide="mountain"></i>
-                <p class="icon-tit">Nature & Trails</p>
-                <p class="icon-p">Escape into breathtaking landscapes and ruggedwilderness.</p>
-            </div>
-            <div data-aos="fade-up"   
-                    data-aos-duration="900"    
-                    data-aos-delay="550"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"  
-            class="iconpatt">
-                <i data-lucide="smile"></i>
-                <p class="icon-tit">Family Getaway</p>
-                <p class="icon-p">Create joyful memories with vibrant entertainmentfor all ages.</p>
-            </div>
+          </div>
         </div>
+        <!-- end card -->
+      </div>
+      <!-- end cards container -->
+    </div>
 
-        <br>
-  
-        <div data-aos="fade-up"   
-                    data-aos-duration="900"    
-                    data-aos-delay="700"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"
-        class="quote-strip">
-          <p>"Every journey begins with a single step beyond the familiar."</p>
-        </div>
+    <div class="icongro">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="iconpatt"
+      >
+        <i class="icon" data-lucide="landmark"></i>
+        <p class="icon-tit">Historical Wonders</p>
+        <p class="icon-p">
+          Journey through ancient dynasties andtimeless monuments.
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="250"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="iconpatt"
+      >
+        <i data-lucide="shopping-bag"></i>
+        <p class="icon-tit">Haute & Shopping</p>
+        <p class="icon-p">
+          Experience iconic fashion capitals and curatedstreet styles.
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="400"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="iconpatt"
+      >
+        <i data-lucide="mountain"></i>
+        <p class="icon-tit">Nature & Trails</p>
+        <p class="icon-p">
+          Escape into breathtaking landscapes and ruggedwilderness.
+        </p>
+      </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-delay="550"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="iconpatt"
+      >
+        <i data-lucide="smile"></i>
+        <p class="icon-tit">Family Getaway</p>
+        <p class="icon-p">
+          Create joyful memories with vibrant entertainmentfor all ages.
+        </p>
+      </div>
+    </div>
 
-        
+    <br />
 
-        <br>
+    <div
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-delay="700"
+      data-aos-easing="ease-in-out"
+      data-aos-once="true"
+      data-aos-duration="600"
+      class="quote-strip"
+    >
+      <p>"Every journey begins with a single step beyond the familiar."</p>
+    </div>
 
-        <div class="foot">
-            <footer>
-                <h6 style="font-size: 13px; display: flex; justify-content: center; align-items: center; text-align: center;">© 2026 TimothyTam · No.11 · Assignment 1</h6>
-            </footer>
-        </div>
+    <br />
 
+    <div class="foot">
+      <footer>
+        <h6
+          style="
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          © 2026 TimothyTam · No.11 · Assignment 1
+        </h6>
+      </footer>
+    </div>
 
-
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-        <script>lucide.createIcons();</script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
-    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
-
-
