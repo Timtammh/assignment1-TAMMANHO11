@@ -254,3 +254,16 @@ a:hover {
         font-size: 70px;
       }
 }
+
+@media only screen and (max-width: 430px) {
+    .icongro {
+        gap: 0px;
+        padding: 0 10px;
+      }
+    .quote-strip {
+        font-size: 30px;
+        width: 350px;
+        margin: 0 auto;
+    }
+    
+}

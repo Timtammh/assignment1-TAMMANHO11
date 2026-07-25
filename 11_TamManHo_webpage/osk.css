@@ -246,6 +246,89 @@ span {
   to { opacity: 1; }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 430px) {
+  .place {
+    font-size: 160px;
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+
+  .egy {
+    margin-left: 50px; 
+    font-size: 70px; 
+    margin-top: 20px;
+    margin-bottom: -30px;
+  }
+
+  .history {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .culture-ou {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  
+  .culture {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-card {
+    display: none;
+  }
+
+  .attractions {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .group-att {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .con-top-att {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .group-att3 {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .con-top {
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .video-card-3 {
+    display: none;
+  }
+
+  .bonus {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 60px;
+    display: flex;
+  }
 
 }

@@ -163,4 +163,21 @@ label {
 }
 
 
+@media only screen and (max-width: 430px) {
+    .formcon {
+        width: 100%;
+        padding: 40px 0;
+        border-radius: 0px;
+        margin-bottom: 50px;
+    }
+    .f-img {
+        display: none;
+    }
+    .formgroupb {
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+}
+
 

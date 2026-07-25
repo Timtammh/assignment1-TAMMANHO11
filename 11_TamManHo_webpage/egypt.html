@@ -1,240 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Description" content="Enter your description here"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <link rel="stylesheet" href="egypt.css">
-        <title>egypt</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="egypt.css" />
+    <title>egypt</title>
 
-        <!-- google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Egyptian+Hieroglyphs&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" 
-        rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cal+Sans&family=Chelsea+Market&family=Limelight&family=Racing+Sans+One&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oregano:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
 
+    <meta name="view-transition" content="same-origin" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-        
-        <meta name="view-transition" content="same-origin">
-        <script src="https://unpkg.com/lucide@latest"></script>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    </head>
+  <body>
+    <div
+      class="bg-slide active"
+      style="background-image: url(img/EG/eg-bg-1.jpeg)"
+    ></div>
+    <div
+      class="bg-slide active"
+      style="background-image: url(img/EG/eg-bg-2.jpeg)"
+    ></div>
+    <div
+      class="bg-slide active"
+      style="background-image: url(img/EG/eg-bg-3.jpeg)"
+    ></div>
+    <div
+      class="bg-slide active"
+      style="background-image: url(img/eg-bg.jpeg)"
+    ></div>
 
+    <div class="dot-nav">
+      <button class="dot active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+      <button class="dot" data-index="3"></button>
+    </div>
 
+    <div class="nav-con">
+      <div class="wor">
+        <a class="nav-color" style="color: rgb(255, 255, 255)" href="">EN /</a>
+        <a style="color: rgb(255, 255, 255)" href="">CN</a>
+      </div>
+      <a style="color: rgb(255, 255, 255)" href="about.html">About us</a>
+      <a style="color: rgb(255, 255, 255)" href="index.html" class="logo"
+        >Essence</a
+      >
+      <a style="color: rgb(255, 255, 255)" href="pic.html">Photo</a>
+      <a style="color: rgb(255, 255, 255)" href="contact.html">Contact</a>
+    </div>
 
-    <body>
+    <div class="nav-con">
+      <a style="color: rgb(255, 255, 255)" href="egypt.html">Egypt</a>
+      <a style="color: rgb(255, 255, 255)" href="paris.html">Paris</a>
+      <a style="color: rgb(255, 255, 255)" href="Sland.html">Highlands</a>
+      <a style="color: rgb(255, 255, 255)" href="osk.html">Osaka</a>
+    </div>
 
-        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-1.jpeg);"></div>
-        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-2.jpeg);"></div>
-        <div class="bg-slide active" style="background-image: url(img/EG/eg-bg-3.jpeg);"></div>
-        <div class="bg-slide active" style="background-image: url(img/eg-bg.jpeg);"></div>
+    <div class="topic">
+      <p class="egy">Egypt</p>
+      <p class="place">Giza & Cairo</p>
+    </div>
 
-        <div class="dot-nav">
-            <button class="dot active" data-index="0"></button>
-            <button class="dot" data-index="1"></button>
-            <button class="dot" data-index="2"></button>
-            <button class="dot" data-index="3"></button>
+    <div class="contect">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="900"
+        data-aos-delay="200"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="history"
+      >
+        <div>
+          <p class="con-top">History</p>
+          <p>
+            Dating back about 4,500 years (26th century BCE), Pharaohs of the
+            Fourth Dynasty chose the Giza Plateau as their final resting place.
+            Mobilizing tens of thousands of artisans, they built the pyramids—a
+            marvel of human architecture symbolizing the peak of royal and
+            divine power.
+          </p>
+
+          <p class="con-top-IGA">Islamic Golden Age</p>
+          <p>
+            Following historical evolution, Cairo became the political and
+            intellectual center of the Islamic world after the 10th century CE.
+            Notably, after Saladin established the Cairo Citadel in the 12th
+            century, Cairo gradually developed into home to one of the world's
+            densest concentrations of historic Islamic architecture.
+          </p>
         </div>
-
-
-
-        <div class="nav-con">
-            <div class="wor">
-               <a class="nav-color" style="color: rgb(255, 255, 255);" href="">EN /</a>
-               <a style="color: rgb(255, 255, 255);" href="">CN</a>
-            </div>
-            <a style="color: rgb(255, 255, 255);" href="about.html">About us</a>
-            <a style="color: rgb(255, 255, 255);"  href="index.html" class="logo">Essence</a>
-            <a style="color: rgb(255, 255, 255);" href="pic.html">Photo</a>
-            <a style="color: rgb(255, 255, 255);" href="contact.html">Contact</a>
+        <div>
+          <video
+            class="video-card-2"
+            height="500"
+            loop
+            autoplay
+            muted
+            playsinline
+          >
+            <source src="vo/egy2.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
         </div>
+      </div>
 
-
-        
-        <div class="nav-con">
-            <a style="color: rgb(255, 255, 255);" href="egypt.html">Egypt</a>
-            <a style="color: rgb(255, 255, 255);" href="paris.html">Paris</a>
-            <a style="color: rgb(255, 255, 255);" href="Sland.html">Highlands</a>
-            <a style="color: rgb(255, 255, 255);" href="osk.html">Osaka</a>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="900"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="culture-ou"
+      >
+        <div>
+          <video
+            class="video-card"
+            height="500"
+            loop
+            autoplay
+            muted
+            playsinline
+          >
+            <source src="vo/egy3.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
         </div>
+        <div class="culture">
+          <p class="con-top">Culture</p>
+          <p class="con-top-IGA">The Afterlife Belief</p>
+          <p>
+            Ancient Egyptians deeply believed in the existence of an afterlife,
+            which led to the development of monumental tomb architecture,
+            intricate mummification techniques, and the tradition of recording
+            history through wall paintings and hieroglyphics.
+          </p>
 
-
-
-
-        <div class="topic">
-            <p style="margin-left: 120px; font-size: 120px; margin-top: 90px;">Egypt</p>
-            <p class="place">Giza<span style="font-size: 60px; vertical-align: baseline; ">&</span>Cairo</p>
+          <p class="con-top-IGA">Bazaar & Social Life</p>
+          <p>
+            In the heart of Cairo, the Khan el-Khalili bazaar has been a
+            gathering place for merchants and artisans for centuries. Locals
+            enjoy sitting at street-side tea houses sipping tea or smoking
+            shisha, embodying a slow-paced social lifestyle rich in Middle
+            Eastern charm.
+          </p>
         </div>
+      </div>
 
+      <br />
+      <br />
 
-        <div class="contect">
-            
-            <div data-aos="fade-down" 
-                    data-aos-duration="900"    
-                    data-aos-delay="200"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"
-                class="history">
-                <div>
-                    <p class="con-top">History</p>
-                    <p>Dating back about 4,500 years (26th century BCE), Pharaohs of the Fourth Dynasty chose the Giza Plateau as their final resting place. Mobilizing tens of thousands of artisans, they built the pyramids—a marvel of human architecture symbolizing the peak of royal and divine power.</p>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="900"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="attractions"
+      >
+        <p class="con-top">Core Attractions</p>
+        <div class="group-att3">
+          <div class="group-att">
+            <p class="con-top-att">Giza Pyramids & The Great Sphinx</p>
+            <p style="font-size: 13px">
+              Comprising the Great Pyramid (Khufu), the Pyramid of Khafre, and
+              the Pyramid of Menkaure, alongside the mysterious giant stone
+              sculpture of the Great Sphinx. It is the only wonder of the
+              ancient world still standing today.
+            </p>
+            <a
+              style="color: white"
+              href="https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza"
+              target="_blank"
+              >More</a
+            >
+          </div>
 
-                    <p class="con-top-IGA">Islamic Golden Age</p>
-                    <p>Following historical evolution, Cairo became the political and intellectual center of the Islamic world after the 10th century CE. Notably, after Saladin established the Cairo Citadel in the 12th century, Cairo gradually developed into home to one of the world's densest concentrations of historic Islamic architecture.</p>
-                </div>
-                <div>
-                    <video class="video-card-2" height="500" loop autoplay muted playsinline>
-                    <source src="vo/egy2.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                    </video>
-                </div>
-            </div>
-            
+          <div class="group-att">
+            <p class="con-top-att">Cairo Citadel & Mosque</p>
+            <p style="font-size: 13px">
+              Perched high above the city, this Ottoman-style mosque features
+              massive onion-shaped domes and soaring minarets, offering the best
+              vantage point to overlook the entire Cairo skyline..
+            </p>
+            <a
+              style="color: white"
+              href="https://en.wikipedia.org/wiki/Muhammad_Ali_Mosque"
+              target="_blank"
+              >More</a
+            >
+          </div>
 
-            <div  data-aos="fade-down" 
-                    data-aos-duration="900"    
-                    data-aos-delay="100"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"
-            class="culture-ou">
-                <div>
-                    <video class="video-card" height="500" loop autoplay muted playsinline>
-                    <source src="vo/egy3.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                    </video>
-                </div>
-                <div class="culture">
-                    <p class="con-top">Culture</p>
-                    <p class="con-top-IGA">The Afterlife Belief</p>
-                    <p>Ancient Egyptians deeply believed in the existence of an afterlife, which led to the development of monumental tomb architecture, intricate mummification techniques, and the tradition of recording history through wall paintings and hieroglyphics.</p>
-
-                    <p class="con-top-IGA">Bazaar & Social Life</p>
-                    <p>In the heart of Cairo, the Khan el-Khalili bazaar has been a gathering place for merchants and artisans for centuries. Locals enjoy sitting at street-side tea houses sipping tea or smoking shisha, embodying a slow-paced social lifestyle rich in Middle Eastern charm.</p>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <div  data-aos="fade-down" 
-                    data-aos-duration="900"    
-                    data-aos-delay="100"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"
-                class="attractions">
-                <p class="con-top">Core Attractions</p>
-                <div class="group-att3">
-                    <div class="group-att">
-                        <p class="con-top-att">Giza Pyramids & The Great Sphinx</p>
-                        <p style="font-size: 13px;">Comprising the Great Pyramid (Khufu), the Pyramid of Khafre, and the Pyramid of Menkaure, alongside the mysterious giant stone sculpture of the Great Sphinx. It is the only wonder of the ancient world still standing today.</p>
-                        <a style="color: white;" href="https://en.wikipedia.org/wiki/Great_Sphinx_of_Giza" target="_blank">More</a>
-                    </div>
-
-                    <div class="group-att">
-                        <p class="con-top-att">Cairo Citadel & Mosque</p>
-                        <p style="font-size: 13px;">Perched high above the city, this Ottoman-style mosque features massive onion-shaped domes and soaring minarets, offering the best vantage point to overlook the entire Cairo skyline..</p>
-                        <a style="color: white;"  href="https://en.wikipedia.org/wiki/Muhammad_Ali_Mosque" target="_blank">More</a>
-                    </div>
-
-                    <div class="group-att">
-                        <p class="con-top-att">Grand Egyptian Museum</p>
-                        <p style="font-size: 13px;">Housing countless rare treasures, including the complete set of golden artifacts excavated from the tomb of Tutankhamun. It is one of the most anticipated museum projects globally in modern times.</p>
-                        <a style="color: white;"  href="https://en.wikipedia.org/wiki/Grand_Egyptian_Museum" target="_blank">More</a>
-                    </div>
-                </div>    
-            </div>
-
-            <div data-aos="fade-down" 
-                    data-aos-duration="900"    
-                    data-aos-delay="100"       
-                    data-aos-easing="ease-in-out"  
-                    data-aos-once="true"
-                    data-aos-duration="600"
-                class="bonus">
-                <div>
-                    <p class="con-top-IGA">Local Cuisine</p>
-                    <p>Introducing Egypt's national dish, Koshary—a unique staple made of macaroni, rice, lentils, crispy fried onions, and spicy tomato sauce.</p>
-
-                    <p class="con-top-IGA">Travel Tips</p>
-                    <p>Recommended travel season is from October to April (avoiding the scorching desert summer). Modest attire is required when visiting mosques or traditional areas to respect local culture.</p>
-                </div>
-                <div>
-                    <video class="video-card-3" height="500" loop autoplay muted playsinline>
-                    <source src="vo/egy1.mp4" type="video/mp4">
-                    Your browser does not support HTML video.
-                    </video>
-                </div>
-            </div>
+          <div class="group-att">
+            <p class="con-top-att">Grand Egyptian Museum</p>
+            <p style="font-size: 13px">
+              Housing countless rare treasures, including the complete set of
+              golden artifacts excavated from the tomb of Tutankhamun. It is one
+              of the most anticipated museum projects globally in modern times.
+            </p>
+            <a
+              style="color: white"
+              href="https://en.wikipedia.org/wiki/Grand_Egyptian_Museum"
+              target="_blank"
+              >More</a
+            >
+          </div>
         </div>
+      </div>
 
+      <div
+        data-aos="fade-down"
+        data-aos-duration="900"
+        data-aos-delay="100"
+        data-aos-easing="ease-in-out"
+        data-aos-once="true"
+        data-aos-duration="600"
+        class="bonus"
+      >
+        <div>
+          <p class="con-top-IGA">Local Cuisine</p>
+          <p>
+            Introducing Egypt's national dish, Koshary—a unique staple made of
+            macaroni, rice, lentils, crispy fried onions, and spicy tomato
+            sauce.
+          </p>
 
-
-        <div class="foot">
-            <footer>
-                <h6 style="font-size: 13px; display: flex; justify-content: center; align-items: center; text-align: center;">© 2026 TimothyTam · No.11 · Assignment 1</h6>
-            </footer>
+          <p class="con-top-IGA">Travel Tips</p>
+          <p>
+            Recommended travel season is from October to April (avoiding the
+            scorching desert summer). Modest attire is required when visiting
+            mosques or traditional areas to respect local culture.
+          </p>
         </div>
+        <div>
+          <video
+            class="video-card-3"
+            height="500"
+            loop
+            autoplay
+            muted
+            playsinline
+          >
+            <source src="vo/egy1.mp4" type="video/mp4" />
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+    </div>
 
-        <script>
-            const dots = document.querySelectorAll('.dot');
-            const slides = document.querySelectorAll('.bg-slide');
-            dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-            const i = dot.dataset.index;
-            dots.forEach(d => d.classList.remove('active'));
-            slides.forEach(s => s.classList.remove('active'));
-            dot.classList.add('active');
-            slides[i].classList.add('active');
-            });
-            });
-        </script>
+    <div class="foot">
+      <footer>
+        <h6
+          style="
+            font-size: 13px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          © 2026 TimothyTam · No.11 · Assignment 1
+        </h6>
+      </footer>
+    </div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-        <script>lucide.createIcons();</script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>AOS.init();</script>
-    </body>
+    <script>
+      const dots = document.querySelectorAll(".dot");
+      const slides = document.querySelectorAll(".bg-slide");
+      dots.forEach((dot) => {
+        dot.addEventListener("click", () => {
+          const i = dot.dataset.index;
+          dots.forEach((d) => d.classList.remove("active"));
+          slides.forEach((s) => s.classList.remove("active"));
+          dot.classList.add("active");
+          slides[i].classList.add("active");
+        });
+      });
+    </script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
