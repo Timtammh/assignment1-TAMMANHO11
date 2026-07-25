@@ -1,0 +1,78 @@
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 200px; /* 每格基本高度 */
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 60px 6vw;
+}
+
+.gallery-item {
+    overflow: hidden; 
+    border-radius: 12px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}  
+    
+.gallery-item:hover img {
+    transform: scale(1.06);
+}   
+    
+/* 令部分卡「霸多啲位」，做出不規則感 */
+    
+.span-tall {
+    grid-row: span 2; /* 高度佔兩格 */
+}
+    
+.span-wide {
+    grid-column: span 2; /* 闊度佔兩格 */
+}
+    
+/* Mobile：轉做兩欄，避免太逼 */
+@media (max-width: 768px) {
+.gallery { 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 160px; 
+}
+    
+.span-wide { 
+    grid-column: span 2; 
+}
+    
+}
+    
+    
+    
+/* ---------- Lightbox ---------- */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+
+.lightbox.active {
+    display: flex;
+}
+     
+.lightbox img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+} 
+    
+    
