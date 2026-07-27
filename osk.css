@@ -37,8 +37,8 @@ z-index: 10;
 }
 
 .dot {
-width: 5px;
-height: 5px;
+width: 10px;
+height: 10px;
 border-radius: 50%;
 border: 1.5px solid #fff;
 background: transparent;
